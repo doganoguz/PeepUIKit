@@ -1,6 +1,6 @@
 # DogiCoin
 <img width="200px" src="https://c.tenor.com/rcbXGO6ys3wAAAAC/bitcoin-crypto.gif" />
-This is Crypto UI App
+Bitcoin uygulaması için bir arayüz kodlamasıdır zamanla güncellenecektir.
 <br>
 UI Tools: Figma
 <br>
