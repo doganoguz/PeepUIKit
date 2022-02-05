@@ -1,8 +1,9 @@
 # DogiCoin
-<img width="29px" src="https://external-preview.redd.it/FuqGGUPh2r8D5y9joV5UzJLme-Q5KVUq-SQYaJrVOvE.gif?format=mp4&s=ff402255f420afbacbd330ae0cb998be8be05e31" />
-Bir ui çalışması olup vakit buldukça üstüne bişeyler eklediğim çalışmadır.
+<img width="29px" src="https://c.tenor.com/rcbXGO6ys3wAAAAC/bitcoin-crypto.gif" />
+This is Crypto UI App
 <br>
-UI için kullandığım araç: Figma
+UI Tools: Figma
+Coding: Flutter & Dart
 <br>
 Editör: VS Code
 
