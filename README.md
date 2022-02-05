@@ -1,5 +1,5 @@
 # DogiCoin
-<img width="29px" src="https://c.tenor.com/rcbXGO6ys3wAAAAC/bitcoin-crypto.gif" />
+<img width="200px" src="https://c.tenor.com/rcbXGO6ys3wAAAAC/bitcoin-crypto.gif" />
 This is Crypto UI App
 <br>
 UI Tools: Figma
