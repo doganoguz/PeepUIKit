@@ -3,9 +3,10 @@
 This is Crypto UI App
 <br>
 UI Tools: Figma
+<br>
 Coding: Flutter & Dart
 <br>
-Editör: VS Code
+Editor: VS Code
 
 ## Screenshot
 ![](https://imgyukle.com/f/2022/02/05/o9JITo.png)
