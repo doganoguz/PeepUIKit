@@ -1,5 +1,7 @@
 import 'package:dogicoin/Constant/color.dart';
-import 'package:dogicoin/Page/login.dart';
+import 'package:dogicoin/Page/home.dart';
+import 'package:dogicoin/Page/sign_in.dart';
+import 'package:dogicoin/Page/welcome.dart';
 import 'package:flutter/material.dart';
 
 
@@ -15,9 +17,12 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           backgroundColor: NowUIColors.homeclr,
           fontFamily: 'Roboto'),
-        initialRoute: '/login',
+        initialRoute: '/welcome',
         routes: <String, WidgetBuilder>{
-          '/login': (BuildContext context) => new Login(),
+'/welcome': (BuildContext context) => new Welcome(),
+          '/home': (BuildContext context) => new Home(),
+
+           '/sign': (BuildContext context) => new SignIn(),
        
           // '/web': (BuildContext context) => new Web()
         });

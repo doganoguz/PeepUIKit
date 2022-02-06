@@ -3,6 +3,7 @@ import 'dart:core';
 import 'dart:io';
 import 'dart:async';
 import 'package:dogicoin/Constant/color.dart';
+import 'package:dogicoin/Page/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -15,12 +16,12 @@ import 'package:flutter/services.dart';
 TextEditingController usr = TextEditingController();
 TextEditingController psd = TextEditingController();
 
-class Login extends StatefulWidget {
+class Home extends StatefulWidget {
   @override
-  _LoginState createState() => _LoginState();
+  _HomeState createState() => _HomeState();
 }
 
-class _LoginState extends State<Login> {
+class _HomeState extends State<Home> {
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   String? username;
@@ -68,8 +69,8 @@ class _LoginState extends State<Login> {
                   child: Image.asset(
                     'assets/imgs/lgn.png',
                     fit: BoxFit.cover,
-                    height: 247,
-                    width: 240,
+                    height: 237,
+                    width: 230,
                   ),
                 ),
                 
@@ -131,6 +132,11 @@ color: NowUIColors.textColor,
                     color: NowUIColors.ydkclr,
                     onPressed: () {
                    
+                    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => 
+   SignIn()));
+
 
                       print("loginsin kardeşim raad");
                     },
@@ -156,6 +162,11 @@ SizedBox(height: 20,),
                     color: NowUIColors.beyaz,
                     onPressed: () {
                    
+
+                    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => 
+   SignIn()));
 
                       print("loginsin kardeşim raad");
                     },

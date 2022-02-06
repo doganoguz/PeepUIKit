@@ -5,7 +5,10 @@ class NowUIColors {
 
   static const Color homeclr = Color(0xFF1F1D2B);
   static const Color ydkclr = Color(0xFF0CFEBC);
+  static const Color yesilkoyu = Color(0xFF22B07D);
+ 
 
+ static const Color textField = Color(0xFF1F1D2B);
 
   static const Color card = Color(0xFFF252836);
   static const Color beyaz = Color(0xFFFFFFFF);
@@ -13,8 +16,7 @@ class NowUIColors {
   static const Color btn = Color(0xFF17A1C3);
 
   static const Color anasite = Color(0xFF377dff);
-  static const Color textColor = Color(0xFF8A8D9F
-);
+  static const Color textColor = Color(0xFF8A8D9F);
   static const Color morcuk = Color(0xFF676ABB);
   static const Color altmenubg = Color(0xFF21325B);
   static const Color bartrn = Color(0xFFfd7e14);
