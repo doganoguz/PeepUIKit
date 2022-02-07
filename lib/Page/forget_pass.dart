@@ -1,20 +1,16 @@
-
 import 'package:dogicoin/Constant/color.dart';
-import 'package:dogicoin/Page/forget_pass.dart';
 import 'package:dogicoin/Page/home.dart';
+import 'package:dogicoin/Page/sign_in.dart';
 import 'package:flutter/material.dart';
 
-class SignIn extends StatefulWidget {
-  SignIn({Key? key}) : super(key: key);
+class ForgetPass extends StatefulWidget {
+  ForgetPass({Key? key}) : super(key: key);
 
   @override
-  State<SignIn> createState() => _SignInState();
+  State<ForgetPass> createState() => _ForgetPassState();
 }
-  bool _rememberMeFlag = true;
-  bool newValue = false;
-class _SignInState extends State<SignIn> {
 
-
+class _ForgetPassState extends State<ForgetPass> {
 
   @override
 Widget build(BuildContext context) {
@@ -29,7 +25,7 @@ Widget build(BuildContext context) {
    
       
     centerTitle: true ,
-    title: new Text("Sign in"),
+    title: new Text("Forget Password"),
   
     backgroundColor: NowUIColors.homeclr,
       
@@ -38,7 +34,7 @@ Widget build(BuildContext context) {
           onPressed: () {Navigator.push(
     context,
     MaterialPageRoute(builder: (context) => 
-   Home()));},
+   SignIn()));},
       ),
           ),
         
@@ -51,39 +47,10 @@ Widget build(BuildContext context) {
             child: Column(
               
               children: <Widget>[
-              SizedBox(height: 128,),
+              SizedBox(height: 70,),
               
-                    Container(
-                    margin: const EdgeInsets.only(left: 20.0),
-                    
-                  alignment: Alignment.centerLeft,
-              child: Text("Welcome back!",
-                            
-                            
-                           style: TextStyle(
+                 
 
-                            fontWeight: FontWeight.bold,
-                           color: NowUIColors.ydkclr,
-                           fontSize: 20,
-
-                           )
-                            ),
-                ),
-                  Container(
-                    margin: const EdgeInsets.only(left: 20.0),
-                  alignment: Alignment.centerLeft,
-              child: Text("Sign in to continue",
-                            
-                            
-                           style: TextStyle(
-
-                           color: NowUIColors.textColor,
-                           fontSize: 18,
-
-                           )
-                            ),
-                ),
-SizedBox(height: 25,),
                   Container(
                        margin: const EdgeInsets.only(bottom: 138.0),
                    
@@ -106,9 +73,20 @@ SizedBox(height: 25,),
                           children: <Widget>[
                        
                             
-                           
+                              new Text(
+                                "We will send a mail to ",
+                                style: new TextStyle(color: NowUIColors.beyaz),
+                              ),
+                              new Text(
+                                "the email address you registered ",
+                                style: new TextStyle(color: NowUIColors.beyaz),
+                              ),
+                                 new Text(
+                                "to regain your password",
+                                style: new TextStyle(color: NowUIColors.beyaz),
+                              ),
                               
-                          
+                          SizedBox(height: 18,),
                                  Container(
                   padding: EdgeInsets.all(8),
                   alignment: Alignment.centerLeft,
@@ -126,8 +104,8 @@ SizedBox(height: 25,),
                       }
                     },
                      style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontFamily: 'Poppins-Regular',
+                      fontWeight: FontWeight.w300,
+                 
                       color: NowUIColors.ydkclr,
                     ),
                      decoration: InputDecoration(
@@ -149,58 +127,21 @@ SizedBox(height: 25,),
       ),
       filled: true,
       hintStyle: TextStyle(color: NowUIColors.ydkclr),
-      hintText: "info@doganoguz.com",
+      hintText: "Email Address",
       fillColor: NowUIColors.textField),
                   ),
                   
                 ),  
+
+                  SizedBox(height: 18,),
+                new Text(
+                                "Email sent to ex*********@gmail.com",
+                                style: new TextStyle(color: NowUIColors.trncu),
+                              ),
                 
-                Container(
-                  padding: EdgeInsets.all(8),
-                  alignment: Alignment.centerLeft,
-                  child: TextFormField(
-                    controller: psd,
-                 
-                    onSaved: (value) {
-                   
-                    },
-                    keyboardType: TextInputType.visiblePassword,
-                    validator: (value) {
-                      if (value != null && value.trim().length < 5) {
-                     
-                      }
-                    },
-                    style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontFamily: 'Poppins-Regular',
-                      color: NowUIColors.ydkclr,
-                    ),
-                    decoration: InputDecoration(
-                      contentPadding: EdgeInsets.all(15.0),
-                      prefixIcon: Icon(Icons.lock, color: NowUIColors.ydkclr,),
-                    border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(25.0),
-      ),
-
-       focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: NowUIColors.textField),
-        borderRadius: BorderRadius.circular(25.7),
-      ),
-      enabledBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: NowUIColors.textField),
-        borderRadius: BorderRadius.circular(25.7),
-      ),
-
-      filled: true,
-      
-      hintStyle: TextStyle(color: NowUIColors.ydkclr),
-      hintText: "*******************",
-      fillColor: NowUIColors.textField),
-                  ),
-                  
-                ),
 
 
+                  SizedBox(height: 18,),
    Container(
                 
                 child: new Row(
@@ -211,37 +152,14 @@ SizedBox(height: 25,),
                         new GestureDetector(
                           child: new Row(
                             children: <Widget>[
-                              new Checkbox(
-                                value: _rememberMeFlag,
-                                onChanged: (value) => setState(() {
-                                      _rememberMeFlag = !_rememberMeFlag;
-                                    }),
-                              ),
-                              new Text(
-                                "Remember me",
-                                style: new TextStyle(color: NowUIColors.ydkclr),
-                              ),
+                             
+                           
                               SizedBox(width: 73,),
                                
-                              new GestureDetector(
-  onTap: () {
-     Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) => 
-   ForgetPass()));
-
-  },
-  child: new Text("Forget Password ?",
-  
-  style: new TextStyle(color: NowUIColors.ydkclr),
-  
-  ),
-),
+                             
                             ],
                           ),
-                          onTap: () => setState(() {
-                                _rememberMeFlag = !_rememberMeFlag;
-                              }),
+                         
                         ),
                       ],
                     ),
@@ -269,7 +187,7 @@ SizedBox(height: 25,),
                       borderRadius: BorderRadius.circular(25.0),
                     ),
                     child: Text(
-                      "Sign in",
+                      "Send",
                       style: TextStyle(
                         
                         fontSize: 15,
@@ -285,39 +203,8 @@ SizedBox(height: 25,),
              
                 
                    )),
-                   Container(
-                    
-                
-                  alignment: Alignment.center,
-              child: Text("Already have not an account?",
-                            
-                            
-                           style: TextStyle(
-
-                           
-                           color: NowUIColors.beyaz,
-                           fontSize: 16,
-
-                           )
-                            ),
-                ),
-                SizedBox(height: 10,),
-                    Container(
-          
-                  alignment: Alignment.center,
-              child: Text("Sign up",
-                            
-                            
-                           style: TextStyle(
-
-                           
-                           color: NowUIColors.ydkclr,
-                           fontSize: 16,
-
-                           )
-                            ),
-                ),
-                   
+                 
+            
                    
                    
                     ],

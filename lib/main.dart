@@ -1,4 +1,6 @@
 import 'package:dogicoin/Constant/color.dart';
+import 'package:dogicoin/Page/forget_pass.dart';
+import 'package:dogicoin/Page/forget_pass.dart';
 import 'package:dogicoin/Page/home.dart';
 import 'package:dogicoin/Page/sign_in.dart';
 import 'package:dogicoin/Page/welcome.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
           '/home': (BuildContext context) => new Home(),
 
            '/sign': (BuildContext context) => new SignIn(),
-       
+       '/forget': (BuildContext context) => new ForgetPass(),
           // '/web': (BuildContext context) => new Web()
         });
   }

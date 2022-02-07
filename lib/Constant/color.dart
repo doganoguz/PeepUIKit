@@ -6,7 +6,7 @@ class NowUIColors {
   static const Color homeclr = Color(0xFF1F1D2B);
   static const Color ydkclr = Color(0xFF0CFEBC);
   static const Color yesilkoyu = Color(0xFF22B07D);
- 
+   static const Color trncu = Color(0xFFFFB721);
 
  static const Color textField = Color(0xFF1F1D2B);
 
